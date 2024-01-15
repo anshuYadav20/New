@@ -189,6 +189,83 @@ a -b -c
 ['a ', 'b ', 'c']
 >>>
 
+>>>
+>>>
+>>> #------------------TUPLE-----------
+>>> #we cannot modify tuple-immutable list are mutable means we can modify
+>>> course=(1,2,3,4)
+>>> a=course
+>>> print(a)
+(1, 2, 3, 4)
+>>> print(course)
+(1, 2, 3, 4)
+>>> course.append(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'tuple' object has no attribute 'append'
+>>> #we are getting error when try to change not many method as list as it is immutable
+>>> # we cant append remove
+>>> if you need something modified use list if you want only loop though and access use tuple
+  File "<stdin>", line 1
+    if you need something modified use list if you want only loop though and access use tuple
+                                       ^^^^^^^^^^^
+SyntaxError: expected 'else' after 'if' expression
+>>> #if you need something modified use list if you want only loop though and access use tuple
+>>> ----------------------------SET------------------------------
+  File "<stdin>", line 1
+    ----------------------------SET------------------------------
+                                                                 ^
+SyntaxError: invalid syntax
+>>> #----------------------------SET------------------------------
+>>> set having value unordered and unique
+  File "<stdin>", line 1
+    set having value unordered and unique
+        ^^^^^^
+SyntaxError: invalid syntax
+>>> #set having value unordered and unique
+>>> #set having value unordered and unique use {}
+>>> a={2,3,7,8}
+>>> print(a)
+{8, 2, 3, 7}
+>>> #unordered because as we can see 8 at last in above but at first in down
+>>> print(a)
+{8, 2, 3, 7}
+>>> print(a)
+{8, 2, 3, 7}
+>>> a={2,3,7,8,8}
+>>> print(a)
+{8, 2, 3, 7}
+>>> #still having 1 '8' as not support duplicate value
+>>> #main functionality of sets to check what value other sets share or not
+>>> a={2,3,7,9,10}
+>>> b={2,3,7,11,10}
+>>> #to see what number in common we use inetrsection metthod
+>>> print(a.intersection(b))
+{10, 2, 3, 7}
+>>> #to see what in b but not in a we use difference method
+>>> print(a.difference(b))
+{9}
+>>> #if want to combine and print all of courses
+>>> print(a.union(b))
+{2, 3, 7, 9, 10, 11}
+>>> #------------------------------how to create empty list tuple sets-----------------
+>>> a=[]
+>>> a=list[]
+  File "<stdin>", line 1
+    a=list[]
+           ^
+SyntaxError: invalid syntax
+>>> a=list()
+>>> a=()
+>>> a=tuple()
+>>> a={}
+>>> a=set{}
+  File "<stdin>", line 1
+    a=set{}
+         ^
+SyntaxError: invalid syntax
+>>> a=set()
+>>> #way to create empty list
 
 
 
