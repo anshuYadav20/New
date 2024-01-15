@@ -1,0 +1,22 @@
+Tutorial: LIST ,TUPLE,SETS
+ype "help", "copyright", "credits" or "license" for more information.
+>>> course=[1,2,3,4,5]
+>>> print(course[2])
+3
+>>> #way to create list
+>>> print(course[2:])
+[3, 4, 5]
+>>> print(course[0:2])
+[1, 2]
+>>> #[2:4] is known as slicing
+>>> #list method to modify our list
+>>> # 1.Append-add item to the end of list
+>>> course.append(6)
+>>> print(course)
+[1, 2, 3, 4, 5, 6]
+>>> #2. To insert value at specific location take 2 argument 1.index where you want to insert 2. value you want to insert
+>>> course.insert(2,87)
+>>> print(course)
+[1, 2, 87, 3, 4, 5, 6]
+>>> #3. we used this method when we want to add muliple value to the list
+>>>
