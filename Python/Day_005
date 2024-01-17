@@ -1,0 +1,64 @@
+Dictionary.
+  1.
+
+
+#------------------------------DICTIONARY--------------------------------
+>>> student={'name':'anshu','age':25,'course':['math','english']}
+>>> print(student
+... )
+{'name': 'anshu', 'age': 25, 'course': ['math', 'english']}
+>>> # first value represent key second is value
+>>> #Toa access a value in Dictionary
+>>> print(student['name'])
+anshu
+>>> print(student['age'])
+25
+>>> print(student['course'])
+['math', 'english']
+>>> #if we want to access a value which dont have key pair
+>>> # it will result in key pair error
+>>> # so to overcome this we using get method if key not found it will result in "None" and and we can also pass "Argument".
+>>> print
+<built-in function print>
+>>> print(student.get(1))
+None>>> print(student.get(1,"Not Found"))
+Not Found
+>>> #################TO ADD NEW ENTRY TO DICTIONARY###########
+>>> student['phone']=123
+>>> print(student)
+{'name': 'anshu', 'age': 25, 'course': ['math', 'english'], 'phone': 123}
+>>> ##############UPDATE #########################
+>>> student.update({'name':'ans'})
+>>> print(student)
+{'name': 'ans', 'age': 25, 'course': ['math', 'english'], 'phone': 123}
+>>> #update method take the value in dictionary
+>>> ##Delete ------------------
+>>> del student['age']
+>>> print(student)
+{'name': 'ans', 'course': ['math', 'english'], 'phone': 123}
+>>> #another method also with pop
+>>> a=student.pop('phone')
+>>> print(student)
+{'name': 'ans', 'course': ['math', 'english']}
+>>> ####TO CHECK HOW MANY KEYS WE HAVE WE USE LEN FUNCTION
+>>> print(len(student))
+2
+>>> print(student.keys())#to see all key value
+dict_keys(['name', 'course'])
+>>> print(student.values())#to see all  value
+dict_values(['ans', ['math', 'english']])
+>>> print(student.items())#to see all keys and value
+dict_items([('name', 'ans'), ('course', ['math', 'english'])])
+>>> #######loop
+>>> for key in student:
+...  print(key)
+...
+name
+course
+>>> for key,value in student.item():
+...  print(key, value)
+...
+
+name ans
+course ['math', 'english']
+>>>
