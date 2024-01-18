@@ -1,0 +1,41 @@
+we can use and , or ,
+
+a=9
+b=7
+c=8
+ 
+if a>=b and a>=c:
+  print("a ")
+
+elif b>=c and b>=a:
+ print("b")
+
+else:
+ print("c")
+
+..
+>>> print(a is b)
+False
+>>> #comparing two list ids
+>>> print((a))
+[1, 2]
+>>> print(id(a))
+2427631340160
+>>> print(id(b))
+2427627354432
+>>>False version:
+ #false
+ #None
+ #Zero of any numeric type
+ # any empty sequence for eg:  ''->empty string,(),[]
+ #any empty mapping.{}
+
+#Comparison:
+equal: ==
+not equal: !=
+Greater than:>
+less than: <
+object identity: is
+#and
+#or
+#not
