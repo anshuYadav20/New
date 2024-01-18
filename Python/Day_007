@@ -1,0 +1,99 @@
+***************loop
+>>> a=[1,2,3,5]
+>>> for n in a:
+...  print(n) # n will take every value of a
+...
+1
+2
+3
+5
+
+>>> for n in a:
+...  if n==5:
+...   print("g")
+...   break
+...
+g
+>>> break :break  before 5 condition satisfied //break out of the loop
+>>>continue: to ignore a value not to come out of the loop skip to the next iteration of the loop
+
+>>> for n in a:
+...  if n==5:
+...   print("c")
+...  print(n)
+...
+1
+2
+3
+c
+5
+>>>
+>>> #to run through a loop 10 times we used range function:
+>>> for i in range(10):
+...  print(i)
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+>>> for i in range(1,11): # doesnt include last value
+...  print(i)
+...
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+>>> #for loop iterrate until a range but while loops goes until a condition match
+>>> x=0
+>>> while x<10:
+...  print(x)
+...  x+=1
+...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
