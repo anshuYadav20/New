@@ -26,9 +26,6 @@ ype "help", "copyright", "credits" or "license" for more information.
 >>> print(course) #insert added whole list course2 not each individual value it is like list within the list
 [1, 2, [2, 36], 87, 3, 4, 5, 6]
 >>> course.extend(2,course2)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: list.extend() takes exactly one argument (2 given)
 >>> course.extend(course2)
 >>> print(course)
 [1, 2, [2, 36], 87, 3, 4, 5, 6, 2, 36]
@@ -42,9 +39,6 @@ TypeError: list.extend() takes exactly one argument (2 given)
 [1, 2, 87, 3, 4, 5, 6, 2, 36, [2, 36]]
 >>> #1.remove 2.pop->used to remove last value of list *important thing about pop its return value which we pop so we used a variable to store a value
 >>> a=course(pop())
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'pop' is not defined. Did you mean: 'pow'?
 >>> a=course.pop()
 >>> print(course) #added whole list
 [1, 2, 87, 3, 4, 5, 6, 2, 36]
@@ -72,10 +66,6 @@ None
 [87, 36, 6, 5, 4, 3, 2, 2, 1]
 >>> #1. way to reverse like this sort then reverse 2. use sort(reverse=true)
 >>> course.sort(reverse=true) #sort in descending order
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'true' is not defined. Did you mean: 'True'?
->>> course.sort(reverse=True) #sort in descending order
 >>> print(course)
 [87, 36, 6, 5, 4, 3, 2, 2, 1]
 >>> #now in this way our original list sorted what if we dont want to change our orinal list then use sorted() method
@@ -84,10 +74,6 @@ NameError: name 'true' is not defined. Did you mean: 'True'?
 >>> print(course)
 [87, 36, 6, 5, 4, 3, 2, 2, 1]
 >>> so here we ,can clearly see it wont sort orinal list
-  File "<stdin>", line 1
-    so here we ,can clearly see it wont sort orinal list
-       ^^^^
-SyntaxError: invalid syntax
 >>> #so here we ,can clearly see it wont sort orinal list
 >>> #----to get min and max valu----
 >>> print(min(course))
@@ -108,12 +94,6 @@ ValueError: 72 is not in list
 False
 >>> print( 87 in course)
 True
->>> for a in course:
-... print(a)
-  File "<stdin>", line 2
-    print(a)
-    ^
-IndentationError: expected an indented block after 'for' statement on line 1
 >>> for a in course:
 ...  print(a)
 ...
@@ -167,18 +147,6 @@ IndentationError: expected an indented block after 'for' statement on line 1
 8 2
 9 1
 >>> #---JOIN-----
->>> Course='-'.join(course)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: sequence item 0: expected str instance, int found
->>> Course='- '.join(course)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: sequence item 0: expected str instance, int found
->>> Course='- '.join(course)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: sequence item 0: expected str instance, int found
 >>> new=['a','b','c']
 >>> course=' -'.join(new)
 >>> print(course)
@@ -217,11 +185,7 @@ SyntaxError: expected 'else' after 'if' expression
                                                                  ^
 SyntaxError: invalid syntax
 >>> #----------------------------SET------------------------------
->>> set having value unordered and unique
-  File "<stdin>", line 1
-    set having value unordered and unique
-        ^^^^^^
-SyntaxError: invalid syntax
+
 >>> #set having value unordered and unique
 >>> #set having value unordered and unique use {}
 >>> a={2,3,7,8}
